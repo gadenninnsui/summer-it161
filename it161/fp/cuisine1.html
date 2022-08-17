@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Yuki Hirate's IT161 Portal Website</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="final_css/final_nav.css" />
+  <link rel="stylesheet" href="final_css/final_portal.css" />
+ </head>
+ <body>
+     <header>
+     <h1>Yuki's Website</h1>
+     <nav class="topnav" id="myTopnav">
+       <a href="template.html" class="active">Welcome</a>
+       <a href="about.html">About</a>
+       <a href="thought.html">Thought</a>
+       <a href="contact.php">Contact</a>
+       <a href="../index.html">index.html</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </nav>
+     </header>
+     
+   <div class="wrapper">
+    <h1>Jiro Ramen</h1>
+        <img class="cuisine" src="final_images/jirou.jpg" alt="image of cuisine"/>
+
+        <div class="ingredient">
+            <h2>Ingredients</h2>
+            <h3>For Soup</h3>
+            <ul>
+                <li>PRE BOILED PORK BONES 400g</li>
+                <li>PRE BOILED PORK BACKBONE 500g</li>
+                <li>WATER 3L</li>
+                <li>PORK SPARE RIBS 3pcs</li>
+                <li>WATER 500ml</li>
+                <li>PORK FAT 1pc</li>
+                <li>MINCED PORK FAT 200g</li>
+                <li>WATER 500ml</li>
+            </ul>
+            <h3>For Noodles</h3>
+            <ul>
+                <li>WATER 105ml</li>
+                <li>KANSUI 4g</li>
+                <li>SALT 4g</li>
+                <li>FLOUR 250g</li>
+                <li>SEMOLINA 50g</li>
+            </ul>
+            <h3>For Topping</h3>
+            <ul>
+                <li>BOILED PORK FAT</li>
+                <li>CABBAGE</li>
+                <li>BEAN SPROUT</li>
+                <li>GARRIC</li>
+                <li>CHASHU</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2 class="recipe">How to cook</h2>
+            <h3>For Soup</h3>
+            <ol>
+                <li>Add Pre Boiled Pork Bones, Pre Boiled Pork Backbone, Pork Spare Ribs and Water into a large pot</li>
+                <li>Start stove at strong fire to boil</li>
+                <li>Once soup start to boil, remove scum</li>
+                <li>Switch to low fire and continue to simmer for 90min</li>
+                <li>Remove Spare Ribs from pot</li>
+                <li>Add Water 500ml, Pork Fat and Minced Pork Fat into the soup</li>
+                <li>Change to strong fire</li>
+                <li>When soup is boiling, cover and continue to boil 40min</li>
+                <li>After 40min, add more Water 500ml into pot</li>
+                <li>Cover again and boil 40min more</li>
+                <li>Remove Pork Fat from soup</li>
+                <li>Stop fire</li>
+                <li>Strain the Soup. Soup is done</li>
+            </ol>
+            <h3>For Noodles</h3>
+            <ol>
+                <li>Mix with Water, Kansui and Salt</li>
+                <li>Add kansui mix into Flour and Semolina and stir</li>
+                <li>Use a roller to press into a smooth flat dough</li>
+                <li>Using a noodle machine, make flat and long roll of dough</li>
+                <li>For Jiro-Style ramen use thick noodles</li>
+                <li>Noodles are done</li>
+            </ol>
+
+        </div>
+
+    
+     <footer>
+        <p>reference: <a href="https://ramenkaonashi.com/jiro-ramen/#STEP_4_NOODLES">https://ramenkaonashi.com/jiro-ramen/#STEP_4_NOODLES</a></p>
+      <p><small>&copy; 2021 by 
+          <a href="contact.php">Yuki Hirate</a>, All Rights Reserved ~ 
+          <a href="disclaimer.html">Disclaimer</a>
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a></small>
+     </p>
+    </footer>
+  </div>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>

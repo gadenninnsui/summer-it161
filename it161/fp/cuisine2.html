@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Yuki Hirate's IT161 Portal Website</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="final_css/final_nav.css" />
+  <link rel="stylesheet" href="final_css/final_portal.css" />
+ </head>
+ <body>
+     <header>
+     <h1>Yuki's Website</h1>
+     <nav class="topnav" id="myTopnav">
+       <a href="template.html" class="active">Welcome</a>
+       <a href="about.html">About</a>
+       <a href="thought.html">Thought</a>
+       <a href="contact.php">Contact</a>
+       <a href="../index.html">index.html</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </nav>
+     </header>
+     
+   <div class="wrapper">
+    <h1>Brisket</h1>
+        <img class="cuisine" src="final_images/brisket.jpg" alt="image of cuisine"/>
+
+        <div class="ingredient">
+            <h2>Ingredients</h2>
+                <ul>
+                    <li>BEEf</li>
+                    <li>BEER</li>
+                    <li>ONION</li>
+                    <li>GARRIC</li>
+                    <li>HERBS</li>
+                </ul>
+        </div>
+
+        <div>
+            <h2 class="recipe">How to cook</h2>
+            <ol>
+                <li>Sear the brisket first. Sear the brisket all over to caramelize the meat and develop flavor before slow cooking it</li>
+                <li>Submerge the brisket in liquid and add aromatics</li>
+                <li>Bring the liquid to a boil, then reduce to a simmer</li>
+                <li>Cover and transfer to a 225 degrees F oven. Now walk away! After 3 hours, start testing with a paring knife or fork to see if it's falling apart tender</li>
+            </ol>
+        </div>
+
+    
+     <footer>
+        <p>reference: <a href="https://www.foodnetwork.com/how-to/packages/food-network-essentials/what-is-brisket">https://www.foodnetwork.com/how-to/packages/food-network-essentials/what-is-brisket</a></p>
+      <p><small>&copy; 2021 by 
+          <a href="contact.php">Yuki Hirate</a>, All Rights Reserved ~
+          <a href="disclaimer.html">Disclaimer</a> 
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a></small>
+     </p>
+    </footer>
+  </div>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>

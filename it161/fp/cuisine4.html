@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Yuki Hirate's IT161 Portal Website</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="final_css/final_nav.css" />
+  <link rel="stylesheet" href="final_css/final_portal.css" />
+ </head>
+ <body>
+     <header>
+     <h1>Yuki's Website</h1>
+     <nav class="topnav" id="myTopnav">
+       <a href="template.html" class="active">Welcome</a>
+       <a href="about.html">About</a>
+       <a href="thought.html">Thought</a>
+       <a href="contact.php">Contact</a>
+       <a href="../index.html">index.html</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </nav>
+     </header>
+     
+   <div class="wrapper">
+    <h1>Curry</h1>
+        <img class="cuisine" src="final_images/curry.jpg" alt="image of cuisine">
+
+        <div class="ingredient">
+            <h2>Ingredients</h2>
+                <ul>
+                    <li>2 tablespoons vegetable oil</li>
+                    <li>1/2-1 lbs meat, cut into bite-sized pieces (can use beef, pork, chicken, lamb or goat)</li>
+                    <li>1 yellow onion, diced</li>
+                    <li>3 cloves garlic, minced</li>
+                    <li>2 teaspoons grated ginger root</li>
+                    <li>1/2 to 2 tablespoons of garam masala, curry powder or a combo of both</li>
+                    <li>2 cups broth (can use vegetable or chicken)</li>
+                    <li>2 medium tomatoes, chopped, or 1 (15.5 ounces) can of diced tomatoes</li>
+                    <li>1/2 cup heavy whipping cream, coconut milk or full-fat Greek yogurt</li>
+                </ul>
+        </div>
+
+        <div>
+            <h2 class="recipe">How to cook</h2>
+            <ol>
+                <li>Searing the meat is a great way to build layers of flavor into your curry, but you’ll need to add it in batches to get a hard sear and prevent steaming. Heat the vegetable oil over medium-high heat in a large skillet. Add the meat in batches, browning it on all sides, about 5 minutes. It doesn’t need to be cooked through—there will be plenty of time for that later! Then, remove it to a plate and set it aside while you brown the rest of the meat</li>
+                <li>Once the meat is finished browning, add the diced onion to the skillet and cook over medium-high heat until it has softened and starts to caramelize on the edges, about 5 minutes. There should be plenty of oil left in the pan, but you can add an extra glug of oil if you need</li>
+                <li>Now the fun begins: add the garlic, ginger and spices. Blooming the spices is a crucial step to creating a successful curry, as it releases essential flavor compounds. You only need about 30 seconds here; you don’t want the garlic to brown and become bitter. You know it’s done when the aroma in the room becomes completely intoxicating</li>
+                <li>Add the broth and tomatoes. Bring the mixture to a simmer and let the flavors meld for about 5 minutes. If you’re using meat, add the browned meat back to the simmering sauce and turn the heat down to low. Cover the skillet and cook for 5 to 10 minutes, until the meat is cooked through and tender</li>
+                <li>Remove the curry from the heat and whisk in 1/2 cup heavy whipping cream, coconut milk or full-fat Greek yogurt to create an extra rich dish</li>
+            </ol>
+        </div>
+
+    
+     <footer>
+        <p>reference: <a href="https://www.tasteofhome.com/article/how-to-make-curry/">https://www.tasteofhome.com/article/how-to-make-curry/</a></p>
+      <p><small>&copy; 2021 by 
+          <a href="contact.php">Yuki Hirate</a>, All Rights Reserved ~ 
+          <a href="disclaimer.html">Disclaimer</a>
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a></small>
+     </p>
+    </footer>
+  </div>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>

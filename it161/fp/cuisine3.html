@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Yuki Hirate's IT161 Portal Website</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="final_css/final_nav.css" />
+  <link rel="stylesheet" href="final_css/final_portal.css" />
+ </head>
+ <body>
+     <header>
+     <h1>Yuki's Website</h1>
+     <nav class="topnav" id="myTopnav">
+       <a href="template.html" class="active">Welcome</a>
+       <a href="about.html">About</a>
+       <a href="thought.html">Thought</a>
+       <a href="contact.php">Contact</a>
+       <a href="../index.html">index.html</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </nav>
+     </header>
+     
+   <div class="wrapper">
+    <h1>Soba</h1>
+        <img class="cuisine" src="final_images/soba.jpg" alt="image of cuisine"/>
+
+
+        <div class="ingredient">
+            <h2>Ingredients</h2>
+                <ul>
+                    <li>3 ⅓ cups soba-grade buckwheat flour (such as Anson Mills Ni-Hachi Sobakoh)(about 14 ounces)</li>
+                    <li>¾ cup all-purpose flour (about 3 1/4 ounces) </li>
+                    <li>1 ¼ cups  filtered water, chilled, divided</li>
+                    <li>Tapioca starch, for sprinkling</li>
+                </ul>
+        </div>
+
+        <div>
+            <h2 class="recipe">How to cook</h2>
+            <ol>
+                <li>Set a large bowl on a damp paper towel to hold the bowl in place on work surface. Sift buckwheat flour and all-purpose flour into bowl. Measure 2 tablespoons chilled water into a small bowl, set aside. Add remaining 1 cup plus 2 tablespoons chilled water to flour mixture; using your fingertips, quickly toss until water is evenly incorporated. Continue to toss until it forms a crumbly mixture, about 1 minute</li>
+                <li>Using the palms of your hands and working quickly, rub dough in a circular motion until it begins to form small clumps, about 2 minutes. If dough feels dry, add 1 tablespoon reserved chilled water. Gather the small clumps, and shape them into a large ball. Transfer dough to a clean work surface, and knead until it is semi-firm and smooth but not sticky, about 2 minutes. If dough still feels dry, add remaining 1 tablespoon chilled water, kneading until dough is smooth and shiny with no visible cracks. Press dough ball into a 1-inch-thick disk</li>
+                <li>Lightly dust dough and a large cutting board with tapioca starch. Using a rolling pin, roll dough into an 18-inch square (about 1/8 inch thick). (Do not flip the dough while rolling it out.) Trim edges to create an even square</li>
+                <li>Generously sprinkle tapioca starch over left half of dough square; fold right half over. Generously sprinkle tapioca starch over top half of dough rectangle; fold bottom half up and over to form a 9-inch square with 4 layers of dough</li>
+                <li>Starting along the right side, use a ruler and long knife (or a cutting guide and soba knife) to cut the dough stack into thin (about 1/8-inch-thick) noodles. Once all noodles are cut, working in batches, gently shake off excess starch by tapping ends of noodles on cutting board. Transfer noodles to a baking sheet, laying them flat. (Do not bundle.) Cover with a clean towel, and wrap tightly with plastic wrap. Refrigerate until ready to cook</li>
+                <li>Set a colander in a large bowl filled with ice water; set aside. Bring an 8-quart pot of water to a rolling boil over high. Gently drop 2 servings of noodles (about 12 ounces) into boiling water. Cook noodles, without stirring, until al dente, about 1 minute and 30 seconds</li>
+                <li>Using a large mesh strainer, transfer noodles to colander set in ice water. Remove colander from ice bath, and rinse noodles under cold running water. Drain and rinse again. Drain thoroughly by tapping the side and bottom of colander (do not toss). Divide noodles between 2 bowls. Repeat cooking process in steps 6 and 7 with remaining noodles</li>
+            </ol>
+        </div>
+
+    
+     <footer>
+        <p>reference: <a href="https://www.foodandwine.com/recipes/homemade-soba-noodles">https://www.foodandwine.com/recipes/homemade-soba-noodles</a></p>
+      <p><small>&copy; 2021 by 
+          <a href="contact.php">Yuki Hirate</a>, All Rights Reserved ~ 
+          <a href="disclaimer.html">Disclaimer</a>
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a></small>
+     </p>
+    </footer>
+  </div>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>
