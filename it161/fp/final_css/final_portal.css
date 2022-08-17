@@ -1,0 +1,55 @@
+header{
+    background-color: #26d0c9;
+    color: #fff;
+}
+
+.wrapper a{
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.cuisine{
+    width:350px;
+    height:auto;
+}
+
+.span_portal, .span2 {
+    display:none;
+}
+
+.disclaim_wrapper{
+    border: 1px solid black;
+}
+
+.disclaim{
+    text-align: center;
+}
+
+/* Desktops and laptops ----------- */
+@media all and (min-width:1280px) {
+    header {
+        width:100%;
+    }
+  }
+  
+/* Tablets  (portrait and landscape) ----------- */
+@media all and (min-device-width:768px) and (max-device-width:1279px) {
+    header{
+        width:90%;
+    }
+    span_portal{
+        display:inline;
+    }
+  }
+  
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-device-width:767px) {
+    header{
+        width:80%
+    }
+    span_portal{
+        display:inline;
+    }
+
+  }
+  
